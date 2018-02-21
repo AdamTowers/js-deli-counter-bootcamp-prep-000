@@ -1,5 +1,5 @@
-function takeANumber (adam_towers, name) {
-  adam_towers.push(name);
+function takeANumber (place, name) {
+  place.push(name);
   return `Welcome, ${name}. You are number ${adam_towers.indexOf(name) + 1} in line.`
 }
 
