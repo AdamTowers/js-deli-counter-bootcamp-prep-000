@@ -18,7 +18,7 @@ function currentLine (line) {
   } else {
     var placesInLine = [];
     for (let i = 0; i < line.length; i++) {
-      placesInLine.push(`${i + 1}. ${katzDeliLine[i]}`)
+      placesInLine.push(`${i + 1}. ${line[i]}`)
     }
     return `The line is currently: ${placesInLine.join(`, `)}`
   }
