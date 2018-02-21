@@ -17,7 +17,7 @@ function currentLine (line) {
     return `The line is currently empty.`
   } else {
     var placesInLine = [];
-    for (let i = 0; i < line.length; i++) {
+    for (var i = 0; i < line.length; i++) {
       placesInLine.push(`${i + 1}. ${line[i]}`)
     }
     return `The line is currently: ${placesInLine.join(`, `)}`
