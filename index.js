@@ -1,6 +1,6 @@
 function takeANumber (place, name) {
   place.push(name);
-  return `Welcome, ${name}. You are number ${adam_towers.indexOf(name) + 1} in line.`
+  return `Welcome, ${name}. You are number ${place.indexOf(name) + 1} in line.`
 }
 
 function nowServing (katzDeliLine) {
