@@ -3,21 +3,21 @@ function takeANumber (line, name) {
   return `Welcome, ${name}. You are number ${line.indexOf(name) + 1} in line.`
 }
 
-function nowServing (katzDeliLine) {
-  if (katzDeliLine.length == 0) {
+function nowServing (line) {
+  if (line.length == 0) {
     return 'There is nobody waiting to be served!'
   } else {
-    var nowServingName = katzDeliLine.shift()
+    var nowServingName = line.shift()
     return `Currently serving ${nowServingName}.`
   }
 }
 
-function currentLine (katzDeliLine) {
-  if (katzDeliLine.length == 0) {
+function currentLine (line) {
+  if (line.length == 0) {
     return `The line is currently empty.`
   } else {
     var placesInLine = [];
-    for (let i = 0; i < katzDeliLine.length; i++) {
+    for (let i = 0; i < line.length; i++) {
       placesInLine.push(`${i + 1}. ${katzDeliLine[i]}`)
     }
     return `The line is currently: ${placesInLine.join(`, `)}`
